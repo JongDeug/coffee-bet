@@ -12,14 +12,14 @@
 
 - [x] **결정**: monorepo 유지 (polyrepo 로 가지 않음, 2026-04-29). `decisions.md` Decision 4 그대로.
 - [x] **결정**: 루트 단일 `go.mod` 는 지우고 각 서비스 폴더에서 새로 init (A 안).
-- [ ] `rm go.mod` (루트 모듈 제거)
-- [ ] `gateway/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/gateway`
-- [ ] `game/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/game`
-- [ ] `shared/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/shared`
-- [ ] `proto/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/proto`
-- [ ] `go work init ./gateway ./game ./shared ./proto`
-- [ ] 빈 main 두 개가 그대로 빌드되는지 `go build ./...` 확인 (루트에서)
-- [ ] `go env GOWORK` 가 `coffee-bet/go.work` 가리키는지 확인
+- [x] `rm go.mod` (루트 모듈 제거)
+- [x] `gateway/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/gateway`
+- [x] `game/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/game`
+- [x] `shared/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/shared`
+- [x] `proto/go.mod` init — `go mod init github.com/JongDeug/coffee-bet/proto`
+- [x] `go work init ./gateway ./game ./shared ./proto`
+- [x] 빈 main 두 개가 그대로 빌드되는지 `go build ./...` 확인 (루트에서)
+- [x] `go env GOWORK` 가 `coffee-bet/go.work` 가리키는지 확인
 - [ ] `.gitignore` 정리 (binary, `.env`, IDE 설정)
 - [ ] `Makefile` 에 최소한 `run-gateway`, `run-game`, `run-nats`, `up` 타겟 채우기
 
